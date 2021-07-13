@@ -18,6 +18,9 @@ def main():
     puz = SudokuGrid()
     puz.source_grid_from(file_data)
 
+    print("PUZZLE:")
+    print(puz)
+
     my_solver = SudokuSolver(puz)
     print("\nsolving puzzle....⏳\n")
     answer = my_solver.solve()

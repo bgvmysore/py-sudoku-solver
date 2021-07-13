@@ -20,7 +20,7 @@ class SudokuGrid:
             if ci % 3 == 0:
                 ret_var += '-'*25 + '\n'
                 ci = 0
-        return ret_var
+        return ret_var.replace("#", "_")
 
     def source_grid_from(self, ip_object, separator=','):
         ip_object = str(ip_object).split(sep=separator)
