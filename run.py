@@ -1,17 +1,43 @@
-from sudoku import SudokuGrid, SudokuGridInput
+from sudoku import SudokuGrid, SudokuGridInput, SudokuSolver
 
 
 def main():
+    file_data = SudokuGridInput()
+    path_to_puzzle = input("Enter the path to txt file containing the puzzle: ")
+    try:
+        file_data.read_txt_file(path_to_puzzle)
+    except ValueError:
+        print(f"[ERR]: \"{path_to_puzzle}\" - Input file does not contain sudoku puzzle in the right format!")
+        print("Try Again 😕 ")
+        return
+    except IOError as e:
+        print(e)
+        print("Try Again 😕 ")
+        return
+
     puz = SudokuGrid()
-    sudoku = SudokuGridInput()
+    puz.source_grid_from(file_data)
 
-    sudoku.read_txt_file('puzzle.txt')
+    my_solver = SudokuSolver(puz)
+    print("\nsolving puzzle....⏳\n")
+    answer = my_solver.solve()
 
-    # print(sudoku.data)
+    print("SOLUTION:")
+    print(answer)
 
-    puz.source_grid_from(sudoku)
-    print(puz)
-    puz.save_grid_to_txt('sol.txt')
+    wanna_save = input("Do you want to save solution to a file? [y/N]")
+    if wanna_save == 'y':
+        error = True
+        while error:
+            output_file = input("Enter output filename: ")
+            try:
+                answer.save_grid_to_txt(output_file)
+            except FileExistsError as e:
+                print("File already exists!...Try again")
+            else:
+                error = False
+    else:
+        return
 
 
 if __name__ == '__main__':
