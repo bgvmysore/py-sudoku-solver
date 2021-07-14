@@ -8,11 +8,11 @@ def main():
         file_data.read_txt_file(path_to_puzzle)
     except ValueError:
         print(f"[ERR]: \"{path_to_puzzle}\" - Input file does not contain sudoku puzzle in the right format!")
-        print("Try Again 😕 ")
+        print("Try Again :-( ")
         return
     except IOError as e:
         print(e)
-        print("Try Again 😕 ")
+        print("Try Again :-( ")
         return
 
     puz = SudokuGrid()
@@ -22,7 +22,7 @@ def main():
     print(puz)
 
     my_solver = SudokuSolver(puz)
-    print("\nsolving puzzle....⏳\n")
+    print("\nsolving puzzle....\n")
     answer = my_solver.solve()
 
     print("SOLUTION:")
