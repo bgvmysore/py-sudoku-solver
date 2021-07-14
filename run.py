@@ -10,8 +10,8 @@ def main():
         print(f"[ERR]: \"{path_to_puzzle}\" - Input file does not contain sudoku puzzle in the right format!")
         print("Try Again :-( ")
         return
-    except IOError as e:
-        print(e)
+    except IOError as expcetion_here:
+        print(expcetion_here)
         print("Try Again :-( ")
         return
 
