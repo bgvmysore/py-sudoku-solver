@@ -1,5 +1,5 @@
-from sudoku import SudokuGrid, SudokuGridInput, SudokuSolver
 import os
+from sudoku import SudokuGrid, SudokuGridInput, SudokuSolver
 
 
 def test_sudoku_grid_validator():
@@ -95,6 +95,6 @@ def test_sudoku_solver_solve():
     solver = SudokuSolver(puz)
     answer = solver.solve()
 
-    f1 = open('example_puzzles/puzzle1_sol.txt', 'r')
-    assert list(map(lambda x: x.replace('\n', ''), f1.readlines())) == str(answer).strip().split('\n')
-    f1.close()
+    file_sol = open('example_puzzles/puzzle1_sol.txt', 'r')
+    assert list(map(lambda x: x.replace('\n', ''), file_sol.readlines())) == str(answer).strip().split('\n')
+    file_sol.close()

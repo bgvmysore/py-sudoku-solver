@@ -1,2 +1,3 @@
-# py-sudoku-solver
-This is a python program that solves a given sudoku puzzel.
+# Python Sudoku Solver
+
+This is a python program that solves a given sudoku puzzle.
