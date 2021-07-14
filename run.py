@@ -35,7 +35,7 @@ def main():
             output_file = input("Enter output filename: ")
             try:
                 answer.save_grid_to_txt(output_file)
-            except FileExistsError as e:
+            except FileExistsError:
                 print("File already exists!...Try again")
             else:
                 error = False

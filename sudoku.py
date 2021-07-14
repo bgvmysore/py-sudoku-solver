@@ -47,7 +47,7 @@ class SudokuGridInput:
     def __init__(self):
         self.data = None
 
-    def read_txt_file(self, path_to_txt_file, sep=' '):
+    def read_txt_file(self, path_to_txt_file):
         file = open(path_to_txt_file, "r")
         lines = file.readlines()
         self.data = ''
