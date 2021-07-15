@@ -10,8 +10,10 @@ files provided in the `example_puzzle/` directory. The demonstration of this app
 
 ## Code Quality
 
+![pylint](https://img.shields.io/badge/Pylint%20Score-8.32%2F10-green?style=flat&logo=python)
+
 To analyze the quality of code, pylint was run on this project for all python files.
-Pylint rating of this project was *`8.32/10`*. The detailed output of pylint analysis can be found [here](misc/pylint_log.txt).
+Pylint rating of this project was **`8.32/10`**. The detailed output of pylint analysis can be found [here](misc/pylint_log.txt).
 
 ## Project Organization
 
