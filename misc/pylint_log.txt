@@ -1,0 +1,37 @@
+************* Module run
+run.py:10:0: C0301: Line too long (110/100) (line-too-long)
+run.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+run.py:4:0: C0116: Missing function or method docstring (missing-function-docstring)
+************* Module sudoku
+sudoku.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+sudoku.py:4:0: C0115: Missing class docstring (missing-class-docstring)
+sudoku.py:10:8: C0103: Variable name "ci" doesn't conform to snake_case naming style (invalid-name)
+sudoku.py:10:12: C0103: Variable name "cj" doesn't conform to snake_case naming style (invalid-name)
+sudoku.py:12:12: C0103: Variable name "ci" doesn't conform to snake_case naming style (invalid-name)
+sudoku.py:15:16: C0103: Variable name "cj" doesn't conform to snake_case naming style (invalid-name)
+sudoku.py:22:16: C0103: Variable name "ci" doesn't conform to snake_case naming style (invalid-name)
+sudoku.py:25:4: C0116: Missing function or method docstring (missing-function-docstring)
+sudoku.py:25:4: R1711: Useless return at end of function or method (useless-return)
+sudoku.py:34:4: C0116: Missing function or method docstring (missing-function-docstring)
+sudoku.py:35:8: R1705: Unnecessary "else" after "return" (no-else-return)
+sudoku.py:40:4: C0116: Missing function or method docstring (missing-function-docstring)
+sudoku.py:46:0: C0115: Missing class docstring (missing-class-docstring)
+sudoku.py:50:4: C0116: Missing function or method docstring (missing-function-docstring)
+sudoku.py:65:0: C0115: Missing class docstring (missing-class-docstring)
+sudoku.py:71:4: C0116: Missing function or method docstring (missing-function-docstring)
+sudoku.py:84:4: C0116: Missing function or method docstring (missing-function-docstring)
+sudoku.py:98:4: C0116: Missing function or method docstring (missing-function-docstring)
+************* Module test_sudoku
+test_sudoku.py:99:0: C0301: Line too long (108/100) (line-too-long)
+test_sudoku.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+test_sudoku.py:5:0: C0116: Missing function or method docstring (missing-function-docstring)
+test_sudoku.py:17:0: C0116: Missing function or method docstring (missing-function-docstring)
+test_sudoku.py:41:0: C0116: Missing function or method docstring (missing-function-docstring)
+test_sudoku.py:61:0: C0116: Missing function or method docstring (missing-function-docstring)
+test_sudoku.py:65:4: C0103: Variable name "eq" doesn't conform to snake_case naming style (invalid-name)
+test_sudoku.py:72:0: C0116: Missing function or method docstring (missing-function-docstring)
+test_sudoku.py:88:0: C0116: Missing function or method docstring (missing-function-docstring)
+
+------------------------------------------------------------------
+Your code has been rated at 8.32/10 (previous run: 8.32/10, +0.00)
+
