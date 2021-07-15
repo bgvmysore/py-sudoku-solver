@@ -1,12 +1,20 @@
 # Python Sudoku Solver
 
-This is a python program that solves a given sudoku puzzle. 
+This is a python program that solves a given sudoku puzzle.
 The application takes in a path for an input text file which contains the sudoku puzzle as comma separated numbers with 
 blank spot represented by '#'. Thr application displays the solution for that puzzle if it exists and presents an option
 to save that solution to a file. The example for the input text file and its corresponding solution can be seen in the 
 files provided in the `example_puzzle/` directory. The demonstration of this application can be seen in the following gif.
 
 ![working app](misc/sudokusolver.gif)
+
+## Running the app
+
+Navigate to the directory containing this project after cloning from a terminal and run the following command:
+
+```
+python run.py
+```
 
 ## Code Quality
 
