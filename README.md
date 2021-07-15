@@ -20,8 +20,8 @@ Pylint rating of this project was *`8.32/10`*. The detailed output of pylint ana
 |`run.py`|Python file| This file is the entrypoint for application. This file should be run to start the application. |
 |`sudoku.py`|Python file| This file contains all the classes and functions for working of this application.|
 |`test_sudoku.py`|Python file| This is a pytest unit test file containing unit tests for methods used in this application.|
-|`README.md`|Markdown file| The readme of this repo|
-|`example_puzzles`|Directory| This directory example sudoku puzzles and their solution to illustrate how the input and output of this application is formatted|
+|`README.md`|Markdown file| The readme of this repo.|
+|`example_puzzles`|Directory| This directory example sudoku puzzles and their solution to illustrate how the input and output of this application is formatted.|
 |`misc`|Directory| This directory contains additional files like pylint log and image files etc.|
 |`puzzle.txt`|Text file|This is a sudoku puzzle formatted as comma separated values of numbers and blank spot represented by '#' and also each column is represented as a newline. This file is used to quickly test and use the application.| 
 
